@@ -1,15 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Abel&family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Alata&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300&display=swap');
 :root{
-	--color-bg: #e5e5e5;
-	--color-accent: #52796f;
+	--color-bg: #EDE5A6;
+	--color-accent: #52B788;
 	--color-typo: #2E2F2F;
 
 	/*	TYPOGRAPHY */
-	--font-accent: 'Abril Fatface', cursive;
-	--main-font: 'Abel', sans-serif;
-	--menu--font: font-family: 'Alata', sans-serif;
+	--font-accent: 'Alfa Slab One', cursive;
+	--main-font:'Nunito', sans-serif;
+	--menu--font:'Alata', sans-serif;
 }
 
 *{
@@ -27,7 +25,7 @@ body{
 	font-family: var(--main-font);
 	background: var(--color-bg);
 	color: var(--color-typo);
-	font-size: 1.65rem;
+	font-size: 1.1rem;
 	margin: 1.5rem;
 }
 
@@ -115,8 +113,15 @@ nav .mobile__menu{
 
 .highlight{
 	color: var(--color-accent);
-	font-weight: 600;
+	font-weight: 100;
+	letter-spacing: 0.02px;
 	font-family: var(--font-accent);
+
+}
+.highlight2{
+	color: var(--color-accent);
+	font-weight: 600;
+	
 
 }
 
@@ -132,15 +137,17 @@ nav .mobile__menu{
 	position: relative;
 }
 
-.branding div {
-	position: relative;
+
+.brand__heading{
+	font-size: 2rem;
+	color: var(--color-accent);
 }
 
 .branding div div{
 	position: absolute;
-	top: 50%;
-  	left: 50%;	
-	font-size: 2.59rem;
+	top: 10%;
+  left: 10%;	
+	
 	font-family: var(--font-accent);
 
 	
@@ -172,15 +179,16 @@ nav .mobile__menu{
 	padding: 12px;
 	border: 2px;
 	border-radius: 6px;
-	margin: auto;
+	margin-top: 12px;
+
 	text-align: center;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	transition: scale,  0.9s ease-out 0.50ms;
+	
+	transition: scale,  0.4s ease-out 0.2ms;
 }
 
 .button:hover {
   background-color: var(--color-typo);
-  scale: 1.12;
+  scale: 1.02;
   padding: 1.3rem;
 }
 
@@ -192,7 +200,7 @@ nav .mobile__menu{
 
 .tile{
 	display: grid;
-	justify-content: space-around;
+
 	width: 100%;
 	margin: 0px;
 	padding: 12px 0;
@@ -464,9 +472,7 @@ nav .mobile__menu{
 	padding: 2.3rem;
 	}
 
-	.gradient{
-		font-size: 3rem;
-	}
+	
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
